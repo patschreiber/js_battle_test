@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title></title>
+  <script type="text/javascript" src="vendor/js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/battle.js"></script>
+  <link rel="stylesheet" type="text/css" href="vendor/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-3">
+        <div id="enemy-hp"><strong>Enemy HP</strong> 100</div>
+        <div id="hero-hp"><strong>Your HP</strong> 100</div>
+        <div id="armor-rating"><strong>Armor Rating</strong> 25</div>
+        <div class="progress">
+          <div class="progress-bar" id="player-atb-gauge" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-danger" id="enemy-atb-gauge" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
+        </div>
+
+
+        <table class="table table-bordered">
+          <tr>
+            <td>
+              <div class="btn-group">
+                <button class="btn btn-default action" id="attack">Attack</button>
+              </div>
+            </td>
+            <td>
+              <div class="btn-group">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="skill">
+                  Skill
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="action"><a href="#">Sun Phase</a></li>
+                  <li class="action"><a href="#">Phantasm</a></li>
+                  <li class="action"><a href="#">Blunt Strike</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="btn-group">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="magic">
+                  Magic
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="action"><a href="#">Rage</a></li>
+                </ul>
+              </div>
+            </td>
+            <td>
+              <div class="btn-group">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="item">
+                  Item
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="action"><a href="#">Potion</a></li>
+                  <li class="action"><a href="#">Strange Cube</a></li>
+                  <li class="action"><a href="#">Lilium x3</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
